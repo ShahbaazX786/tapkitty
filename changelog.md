@@ -1,3 +1,8 @@
+## 1.0.3:
+
+- Removed unnecessary scss files.
+- Added basic home component.
+
 ## 1.0.2:
 
 - Updating default and fallback font styles.

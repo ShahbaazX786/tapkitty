@@ -1,12 +1,8 @@
-import './App.css'
+import Home from './Components/Home';
 
 function App() {
   return (
-    <>
-      <h1 className="text-7xl font-bold underline capitalize">
-        Bismillah
-      </h1>
-    </>
+    <Home />
   )
 }
 
