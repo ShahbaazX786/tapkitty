@@ -1,3 +1,12 @@
+## 1.0.5
+
+- Adding assets
+
+## 1.0.4:
+
+- Adding Initial structure.
+- Added constants file.
+
 ## 1.0.3:
 
 - Removed unnecessary scss files.
@@ -13,4 +22,4 @@
 
 ## 1.0.0 :
 
-- Initial commit
+- Initial commit.
