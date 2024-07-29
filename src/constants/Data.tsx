@@ -142,5 +142,6 @@ export const SocialData = [
 export const GlobalConstants = {
     maxEnergy: 1000 as number,
     energyRefillingSpeed: 1000 as number,
-    defaultPoints: 1
+    defaultPoints: 1 as number,
+    currentPointRate: 1 as number,
 } as const;

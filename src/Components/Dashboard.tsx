@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { dollarCoin, kitty } from "../assets/images";
-import { clickType } from "../constants/Types";
-import BottomNavigation from "./BottomNav";
+import { clickType, DashboardProps } from "../constants/Types";
+import { GlobalConstants } from "../constants/Data";
 
-const Dashboard = ({ currentPoints, setCurrentPoints, energy, setEnergy }: any) => {
+const Dashboard = ({ currentPoints, setCurrentPoints, energy, setEnergy }: DashboardProps) => {
     const [clicks, setClicks] = useState<clickType[]>([]);
-    const [currentPointRate, setCurrentPointRate] = useState(1);
+    const currentPointRate = GlobalConstants.currentPointRate;
 
     const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
         const card = e.currentTarget;
@@ -19,8 +19,15 @@ const Dashboard = ({ currentPoints, setCurrentPoints, energy, setEnergy }: any) 
 
         setCurrentPoints(currentPoints + currentPointRate);
         setClicks([...clicks, { id: Date.now(), x: e.pageX, y: e.pageY }]);
-        setEnergy(energy - currentPointRate);
+        checkAndSetEnergy();
     };
+
+    const checkAndSetEnergy = () => {
+        if (energy > 0) {
+            setEnergy(energy - currentPointRate);
+        }
+        return null;
+    }
 
     const handleEndAnimation = (id: number) => {
         setClicks((prevClicks) => prevClicks.filter(click => click.id !== id));

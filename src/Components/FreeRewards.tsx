@@ -25,7 +25,10 @@ const FreeRewards = () => {
 
     useEffect(() => {
         const updateCountDowns = () => {
-
+            setDailyRewardTimeLeft(0);
+            setDailyCipherTimeLeft(0);
+            setDailyComboTimeLeft(0);
+            calculateTimer(0);
         }
         updateCountDowns();
         const intervals = setInterval(updateCountDowns, 60000);

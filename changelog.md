@@ -1,3 +1,9 @@
+## 1.0.7
+
+- Fixed build errors.
+- Added new interface for dashboard props.
+- Fixed few minor bugs.
+
 ## 1.0.6
 
 - Configured supabase.
