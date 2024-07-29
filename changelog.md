@@ -1,3 +1,7 @@
+## 1.0.8
+
+- Fixed Minor bug.
+
 ## 1.0.7
 
 - Fixed build errors.

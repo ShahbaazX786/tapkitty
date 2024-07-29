@@ -32,7 +32,7 @@ function App() {
 
 
   return (
-    <div className="bg-black flex justify-cente relative">
+    <div className="bg-black flex justify-center relative">
       <div className='w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl'>
         {loading === true ? <div className="absolute top-[50%] left-[50%] right-[50%]">
           <div className="flex flex-col justify-center items-center gap-36">
