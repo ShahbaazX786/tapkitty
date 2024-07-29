@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.progress-bar-gradient {
+    background: linear-gradient(to right, #ffdf29, #FFC107, #ff9500);
+}
+
+.top-glow{
+    box-shadow: 0 -24px 20px rgba(243, 186, 47, 0.3);
+}
+
+/* Main coin Background Gradients */
+.circle-outer {
+    background: linear-gradient(to bottom, #ffdf29,
+        #FFC107,
+        #ff9500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 90vw;
+    max-width: 360px;
+    max-height: 360px;
+}
+
+.circle-inner {
+    background: radial-gradient(circle, #FFC107,#d67d00 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* coin count animation */
+@keyframes coinCountFloat {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}

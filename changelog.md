@@ -1,3 +1,12 @@
+## 1.0.6
+
+- Configured supabase.
+- Added data constants
+- Added components in a separate folder.
+- Added types.
+- Configured graphql and apollo client.
+- added loading animation via state of getquery.
+
 ## 1.0.5
 
 - Adding assets
