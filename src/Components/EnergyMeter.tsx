@@ -23,7 +23,6 @@ const EnergyMeter = ({ energy, setEnergy, energyRefillSpeed }: EnergyMeterPropTy
 
     return (
         <div>
-
             <SlEnergy className="w-4 h-4 mx-auto text-yellow-500 mb-1" />
             <span className="flex justify-center items-center">{energy === maxEnergy ? "Full" : energy}</span>
             <div className="w-full bg-gray-800 rounded-full mt-2">
